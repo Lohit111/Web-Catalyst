@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4 min-h-screen"
+    >
+      <div
+        class="bg-white rounded-2xl shadow-lg hover:shadow-xl duration-200 ease transform hover:-translate-y-1 w-full max-w-md"
+      >
+        <div class="p-[7%]">
+          <div class="flex mb-3">
+            <div class="flex-shrink-0 mr-6">
+              <img
+                id="profile-image"
+                src="https://placehold.co/100x100/4f46e5/ffffff?text=JD"
+                alt="Profile"
+                class="md:w-24 md:h-24 w-16 h-16 rounded-full shadow-md"
+              />
+            </div>
+
+            <div class="flex flex-col justify-center">
+              <h1 id="name" class="md:text-2xl test-md font-bold text-gray-800">
+                John&nbsp;Doe
+              </h1>
+              <h2
+                id="role"
+                class="md:text-lg text-sm font-medium text-indigo-600"
+              >
+                Frontend&nbsp;Developer
+              </h2>
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <p id="bio" class="text-gray-600 text-sm">
+              Passionate frontend developer with 5+ years of experience creating
+              beautiful and responsive web applications. Loves React and modern
+              CSS.
+            </p>
+          </div>
+
+          <div class="flex gap-3">
+            <button
+              id="toggle-btn"
+              class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-2 px-2 md:px-3 md:py-4 rounded-full duration-300 ease-in-out md:text-md text-sm"
+            >
+              Switch&nbsp;Profile
+            </button>
+            <button
+              class="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-2 md:px-3 md:py-4 rounded-full duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-md md:text-md text-sm"
+            >
+              Follow
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
